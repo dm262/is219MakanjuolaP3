@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>IS219 Gallery (Project 3)</title>
 
@@ -51,8 +51,8 @@
 						<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 						
 			            <div class="social">
-			              <p class="likes" ><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
-			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}} </p>
+			              <p class="likes"  @click="like(movie)" ><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
+			              <p class="dislikes"  @click="dislike(movie)" ><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}} </p>
 			            </div>
 	            </div> 
 	        </div>

@@ -70,5 +70,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Matrix",
+            "iscore": 8.7,
+            "rating": "R",
+            "runtime": 136,
+            "released": [1999, 3, 31],
+            "country": "USA",
+            "posters": ["img/matrix1.jpg","img/matrix2.jpg","img/matrix3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0133093",
+            "website": "https://www.warnerbros.com/movies/matrix/",
+            "likes": 445,
+            "dislikes": 56,
+            "posterindex": 0
+      },
+      {
+            "title": "Malcolm X",
+            "iscore": 7.7,
+            "rating": "PG-13",
+            "runtime": 202,
+            "released": [1992, 11, 18],
+            "country": "USA",
+            "posters": ["img/malcolm x.jpg","img/malcolmx2.jpg","img/malcolmx3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0104797",
+            "website": "https://www.warnerbros.com/movies/malcolm-x/",
+            "likes": 451,
+            "dislikes": 99,
+            "posterindex": 0
+      },
+      {
+            "title": "There Will Be Blood ",
+            "iscore": 8.2,
+            "rating": "R",
+            "runtime": 158,
+            "released": [2008, 1, 25],
+            "country": "USA",
+            "posters": ["img/there will be blood 1.jpg","img/there will be blood 2.jpg","img/there will be blood 3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0469494",
+            "website": "https://www.miramax.com/movie/there-will-be-blood/",
+            "likes": 772,
+            "dislikes": 102,
+            "posterindex": 0
       }
 ]

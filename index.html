@@ -37,21 +37,21 @@
 
 	      <div class="container">
 
-	        <div class="col-md-6" >
+	        <div class="col-md-6" v-for="movie in movies" >
 	            <div class="thumbnail" >
 
-						<img :src="movies[0].posters[0] " class="poster"/>
-						<div class="imageInfo">poster {{movies[0].posterindex[0] + 1}} </div>
+						<img :src="movie.posters[movie.posterindex]" class="poster"/>
+						<div class="imageInfo">poster {{movie.posterindex + 1}} of {{movie.length}} </div>
 						
-						<p class="title">{{movies[0].title}} {{movies[0].country}}</p>
-						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movies[0].iscore}} </p>
-						<p class="runtime">Runtime:{{movies[0].runtime}}</p>
-						<p class="released">Released: {{movies[0].runtime}} | Rated: {{movies[0].rating}}</p>
-						<p class="websites">Websites: <a>{{movies[0].imdb}}</a> | <a>{{movies[0].website}}</a></p>
+						<p class="title">{{movie.title}} {{movie.country}}</p>
+						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
+						<p class="runtime">Runtime:{{movie.runtime}}</p>
+						<p class="released">Released: {{movie.runtime}} | Rated: {{movie.rating}}</p>
+						<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 						
 			            <div class="social">
-			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[0].likes}}</p>
-			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[0].likes}} </p>
+			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
+			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}} </p>
 			            </div>
 	            </div> 
 	        </div>

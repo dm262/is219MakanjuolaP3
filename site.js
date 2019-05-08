@@ -32,7 +32,7 @@ const vue_app = new Vue({
       },
       data: {
             // This holds your movies.json data.
-            movies: []
+            movies: [],
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
             title : "IMDb + Dapo's Top 8 movies",
@@ -41,6 +41,7 @@ const vue_app = new Vue({
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+
       }
 })
 	

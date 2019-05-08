@@ -42,7 +42,35 @@ const vue_app = new Vue({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
 
+            makeTextDate(dateArray) {
+                  const date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+                  const month = date.toLocaleString('en-us', { month: 'long' });
+                  return `${month} ${date.getDate()}, ${date.getFullYear()}`;
+            },
+
+            timeText(minutes) {
+                  return `${Math.floor(minutes / 60)}h ${minutes % 60}m`;
+            },
+
+            like(movie) {
+                  movie.likes += 1;
+            },
+
+            dislike(movie) {
+                  movie.dislikes += 1;
+            },
+
+            posterClick(movie) {
+                  if (movie.posterindex >= movie.posters.length - 1)
+                        movie.posterindex = 0;
+                  else
+                        movie.posterindex += 1;
+            }
+
       }
+
+
 })
-	
+
+
 

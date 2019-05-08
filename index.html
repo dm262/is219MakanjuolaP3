@@ -46,8 +46,8 @@
 						
 						<p class="title">{{movie.title}} {{movie.country}}</p>
 						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-						<p class="runtime">Runtime:{{movie.runtime}}</p>
-						<p class="released">Released: {{movie.runtime}} | Rated: {{movie.rating}}</p>
+						<p class="runtime">Runtime:{{timeText(movie.runtime)}}</p>
+						<p class="released">Released: {{ makeTextDate(movie.released)}} | Rated: {{movie.rating}}</p>
 						<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 						
 			            <div class="social">

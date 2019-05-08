@@ -35,6 +35,9 @@ const vue_app = new Vue({
             movies: []
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            title : "IMDb + Dapo's Top 8 movies",
+            owner : "Dapo",
+            github: "https://github.com/dm262/is219MakanjuolaP3",
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */

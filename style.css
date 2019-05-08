@@ -25,7 +25,7 @@ body {
 
 /* This stylizes the poster area and poster images */
 .thumbnail {
-    border: 0px;
+    border: 0;
     position: relative;
     padding: 50px;
     border-radius: 0;
@@ -107,8 +107,25 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
 }
+.likes{
+    background-color: #008700;
+     color: #ffffff;
+ }
+.likes:hover{
+    background-color: #9edd87;
+    color: #008700;
+    transition: 500ms;
+}
+.dislikes {
+    background-color: #f65a5b;
+    color: #ffffff;
+}
+.dislikes:hover{
+    background-color: #fdd6d6;
+    color: #F65A5B;
+    transition: 500ms;
 
-
+}
 /* This makes sure your Github Button is centered */
 .footer {
     text-align: center;

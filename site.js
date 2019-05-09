@@ -47,18 +47,18 @@ const vue_app = new Vue({
                   const month = date.toLocaleString('en-us', { month: 'long' });
                   return `${month} ${date.getDate()}, ${date.getFullYear()}`;
             },
-
-            timeText(minutes) {
-                  return `${Math.floor(minutes / 60)}h ${minutes % 60}m`;
+            dislike(movie) {
+                  movie.dislikes += 1;
             },
+
 
             like(movie) {
                   movie.likes += 1;
             },
-
-            dislike(movie) {
-                  movie.dislikes += 1;
+            timeText(minutes) {
+                  return `${Math.floor(minutes / 60)}h ${minutes % 60}m`;
             },
+
 
             posterClick(movie) {
                   if (movie.posterindex >= movie.posters.length - 1)
